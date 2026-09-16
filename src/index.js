@@ -193,7 +193,7 @@ const server = http.createServer(async (req, res) => {
     try {
       assertEnv();
       const { data, meta } = await callApiWithMeta(API_URL, API_USERNAME, API_PASSWORD, {
-        method: "GET",
+        method: "POST",
       });
 
       res.writeHead(200, { "Content-Type": "application/json" });
